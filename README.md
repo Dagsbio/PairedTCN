@@ -6,11 +6,6 @@ R functions to compare Total Copy Number (TCN) starting from copy number segment
 
 This script provides functions to analyze copy number variation (CNV) data for specified patients, generate plots, and produce annotations. It is organized to allow straightforward reusability.
 
-## Authors
-
-- **David Gómez Sánchez** (gomezsd@mskcc.org)
-- **Ramzi Homsi** (homsir1@mskcc.org)
-
 ## Usage
 
 ### Function Name: `generate_patient_analysis()`
@@ -33,3 +28,8 @@ generate_patient_analysis(
   outDir = "output_directory/",
   oncokb_cnas_path = "path/to/data_CNA.oncokb.txt"
 )
+```
+## Authors
+
+- **David Gómez Sánchez** (gomezsd@mskcc.org)
+- **Ramzi Homsi** (homsir1@mskcc.org)

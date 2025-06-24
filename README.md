@@ -29,7 +29,7 @@ generate_patient_analysis(
   oncokb_cnas_path = "path/to/data_CNA.oncokb.txt"
 )
 ```
-## Authors
+## Contact
 
 - **David Gómez Sánchez** (gomezsd@mskcc.org)
 - **Ramzi Homsi** (homsir1@mskcc.org)

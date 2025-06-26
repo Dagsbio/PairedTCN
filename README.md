@@ -1,6 +1,6 @@
 # CompareTCN
 
-A comprehensive R package for analyzing and comparing Total Copy Number (TCN) profiles between paired and unpaired cancer sample cohorts.
+A R package for analyzing and comparing Total Copy Number (TCN) profiles between paired and unpaired cancer sample cohorts.
 
 ## Overview
 

@@ -30,7 +30,7 @@ CompareTCN provides tools for:
 ### Pairwise Comparison Plots
 _Individual comparison showing unique and shared TCN segments between paired samples_
 
-![Pairwise Comparison](plots/pairwise_comparison_example.png)
+![Pairwise Comparison](plots/pairwise_plot_example.png)
 
 ### Lollipop Plots
 _Distribution of pairwise differences across the compared cohort_

@@ -56,7 +56,7 @@ CompareTCN provides tools for:
 
 ```r
 # Install required packages
-install.packages(c("tidyverse", "ggtext", "ggrepel"))
+install.packages(c("tidyverse", "ggtext", "ggrepel", "tidyheatmaps))
 
 # Bioconductor packages
 if (!require("BiocManager", quietly = TRUE))
@@ -65,3 +65,4 @@ BiocManager::install(c("GenomicRanges", "plyranges"))
 
 # Development version of tidyheatmaps
 devtools::install_github("stemangiola/tidyheatmaps")
+```

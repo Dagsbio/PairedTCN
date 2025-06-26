@@ -28,34 +28,34 @@ CompareTCN provides tools for:
 ## Visualizations
 
 ### Pairwise Comparison Plots
-*Individual comparison showing unique and shared TCN segments between paired samples*
+_Individual comparison showing unique and shared TCN segments between paired samples_
 
-<!-- ![Pairwise Comparison](plots/pairwise_comparison_example.png) -->
+![Pairwise Comparison](plots/pairwise_comparison_example.png)
 
 ### Lollipop Plots
-*Distribution of pairwise differences across the compared cohort*
+_Distribution of pairwise differences across the compared cohort_
 
-<!-- ![Lollipop Plot](plots/lollipop_example.png) -->
+![Lollipop Plot](plots/lollipop_example.png)
 
 ### Average TCN Difference Plot
-*Genome-wide view of average TCN differences with oncogenic gene annotations*
+_Genome-wide view of average TCN differences with oncogenic gene annotations_
 
-<!-- ![Average TCN Difference](plots/average_tcn_diff_example.png) -->
+![Average TCN Difference](plots/average_tcn_diff_example.png)
 
 ### Heatmaps
-*Clustered heatmap showing TCN differences across genomic bins and sample comparisons*
+_Clustered heatmap showing TCN differences across genomic bins and sample comparisons_
 
-<!-- ![Heatmap](plots/heatmap_example.png) -->
+![Heatmap](plots/heatmap_example.png)
 
 ### Volcano Plots
-*Volcano plot highlighting statistically significant genomic regions with gene annotations*
+_Volcano plot highlighting statistically significant genomic regions with gene annotations_
 
-<!-- ![Volcano Plot](plots/volcano_plot_example.png) -->
+![Volcano Plot](plots/volcano_plot_example.png)
 
 ### Manhattan Plots
-*Manhattan plot displaying -log10(adjusted p-values) across chromosomes 1-22*
+_Manhattan plot displaying -log10(adjusted p-values) across chromosomes 1-22_
 
-<!-- ![Manhattan Plot](plots/manhattan_plot_example.png) -->
+![Manhattan Plot](plots/manhattan_plot_example.png)
 
 
 ## Installation
@@ -143,7 +143,7 @@ generate_paired_cohort_analysis(
   Cohort_2 = cohort_2,
   out_dir = "results/paired_analysis/",
   oncokb_cnas_path = "path/to/oncokb_cna_data.txt",
-  bin_size = 1e6, # Select bin size to split the genome, 
+  bin_size = 1e6, # Select bin size to split the genome.
   tcn_diff_threshold = 1, # Threshold to plot labels in the average TCN difference plot.
   exact_match = FALSE,  # Enable partial matching with the ID column in cncf FACETS file.
   prefer_hisens = TRUE # Prefer hisens if multiple matches found.

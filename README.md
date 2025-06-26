@@ -27,6 +27,21 @@ CompareTCN provides tools for:
 
 ## Visualizations
 
+### Pairwise Comparison Plots
+*Individual comparison showing unique and shared TCN segments between paired samples*
+
+<!-- ![Pairwise Comparison](plots/pairwise_comparison_example.png) -->
+
+### Lollipop Plots
+*Distribution of pairwise differences across the compared cohort*
+
+<!-- ![Lollipop Plot](plots/lollipop_example.png) -->
+
+### Average TCN Difference Plot
+*Genome-wide view of average TCN differences with oncogenic gene annotations*
+
+<!-- ![Average TCN Difference](plots/average_tcn_diff_example.png) -->
+
 ### Heatmaps
 *Clustered heatmap showing TCN differences across genomic bins and sample comparisons*
 
@@ -42,15 +57,6 @@ CompareTCN provides tools for:
 
 <!-- ![Manhattan Plot](plots/manhattan_plot_example.png) -->
 
-### Pairwise Comparison Plots
-*Individual comparison showing unique and shared TCN segments between paired samples*
-
-<!-- ![Pairwise Comparison](plots/pairwise_comparison_example.png) -->
-
-### Average TCN Difference Plot
-*Genome-wide view of average TCN differences with oncogenic gene annotations*
-
-<!-- ![Average TCN Difference](plots/average_tcn_diff_example.png) -->
 
 ## Installation
 
@@ -66,3 +72,30 @@ BiocManager::install(c("GenomicRanges", "plyranges"))
 # Development version of tidyheatmaps
 devtools::install_github("stemangiola/tidyheatmaps")
 ```
+
+## Usage
+```
+source("CompareTCN_functions.R")
+
+# Define your paired cohorts using names from the ID column of the cncf FACETS file
+cohort_1 <- c("P-001-Primary", "P-002-Primary", "P-003-Primary")
+cohort_2 <- c("P-001-Metastasis", "P-002-Metastasis", "P-003-Metastasis")
+
+# Run paired analysis
+generate_paired_cohort_analysis(
+  cncf_path = "path/to/cncf_data.txt",
+  biomart_gr_path = "path/to/biomart_annotations.rds",
+  Cohort_1 = cohort_1,
+  Cohort_2 = cohort_2,
+  out_dir = "results/paired_analysis/",
+  oncokb_cnas_path = "path/to/oncokb_cna_data.txt",
+  bin_size = 1e6,
+  tcn_diff_threshold = 1,
+  exact_match = FALSE, 
+  prefer_hisens = TRUE
+)
+```
+
+
+
+

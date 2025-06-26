@@ -62,7 +62,7 @@ CompareTCN provides tools for:
 
 ```r
 # Install required packages
-install.packages(c("tidyverse", "ggtext", "ggrepel", "tidyheatmaps))
+install.packages(c("tidyverse", "ggtext", "ggrepel", "tidyheatmaps"))
 
 # Bioconductor packages
 if (!require("BiocManager", quietly = TRUE))

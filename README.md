@@ -32,7 +32,7 @@ _Individual comparison showing unique and shared TCN segments between paired sam
 
 ![Pairwise Comparison](plots/pairwise_plot_example.png)
 
-### Lollipop Plots
+### Lollipop Plot
 _Distribution of pairwise differences across the compared cohort_
 
 ![Lollipop Plot](plots/lollipop_example.png)
@@ -47,12 +47,12 @@ _Clustered heatmap showing TCN differences across genomic bins and sample compar
 
 ![Heatmap](plots/heatmap_example.png)
 
-### Volcano Plots
+### Volcano Plot
 _Volcano plot highlighting statistically significant genomic regions with gene annotations_
 
 ![Volcano Plot](plots/volcano_plot_example.png)
 
-### Manhattan Plots
+### Manhattan Plot
 _Manhattan plot displaying -log10(adjusted p-values) across chromosomes 1-22_
 
 ![Manhattan Plot](plots/manhattan_plot_example.png)
@@ -74,7 +74,7 @@ devtools::install_github("stemangiola/tidyheatmaps")
 ```
 ## Input Data Requirements
 
-### CNCF File
+### CNCF-FACETS-Like File
 Tab-separated file with columns:
 - `ID`: Sample identifier
 - `chrom`: Chromosome number (1-22)

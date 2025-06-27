@@ -62,7 +62,7 @@ _Manhattan plot displaying -log10(adjusted p-values) across chromosomes 1-22_
 
 ```r
 # Install required packages
-install.packages(c("tidyverse", "ggtext", "ggrepel", "tidyheatmaps"))
+install.packages(c("tidyverse", "ggtext", "ggrepel", "tidyheatmaps","viridis"))
 
 # Bioconductor packages
 if (!require("BiocManager", quietly = TRUE))

@@ -179,6 +179,6 @@ generate_paired_cohort_analysis(
 
 ## Authors
 
-David Gomez Sanchez
-Ramzi Homsi
+David Gomez Sanchez (gomezsd@mskcc.org)
+Ramzi Homsi (homsir1@mskcc.org)
 

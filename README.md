@@ -133,7 +133,7 @@ cohort_2 <- c("P-001-Metastasis", "P-002-Metastasis", "P-003-Metastasis")
 
 # Run paired analysis
 generate_paired_cohort_analysis(
-  cncf_path = "path/to/cncf_data.txt",
+  cncf_path = "path/to/impact_facets_annotated.cncf.txt",
   biomart_gr_path = "path/to/biomart_annotations.rds",
   Cohort_1 = cohort_1,
   Cohort_2 = cohort_2,

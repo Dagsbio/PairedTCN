@@ -124,7 +124,7 @@ Flexible sample matching with:
 
 
 ## Example Usage
-```
+```r
 source("CompareTCN_functions.R")
 
 # Define your paired cohorts using names from the ID column of the cncf FACETS file or just sample 

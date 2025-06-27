@@ -19,7 +19,7 @@ CompareTCN provides tools for:
 - Generates pairwise comparison plots showing TCN differences
 - Creates summary statistics for each patient pair
 
-### Unpaired Cohort Analysis  
+### Unpaired Cohort Analysis  (COMING SOON)
 - Compares two independent cohorts of potentially different sizes
 - Uses **Mann-Whitney U test** for independent group comparisons
 - Analyzes average TCN differences between cohorts

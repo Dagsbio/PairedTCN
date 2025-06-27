@@ -177,4 +177,8 @@ generate_paired_cohort_analysis(
 - **Wilcoxon rank-sum test**: Non-parametric alternative to two-sample t-test
 - **FDR correction**: Benjamini-Hochberg correction for multiple testing
 
+## Authors
+
+David Gomez Sanchez
+Ramzi Homsi
 

@@ -111,7 +111,7 @@ Flexible sample matching with:
 - Missing data handling
 - Statistical power assessment
 
-## Parameters
+## Default Parameters
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
@@ -119,9 +119,6 @@ Flexible sample matching with:
 | `tcn_diff_threshold` | Threshold for calling significant differences | 1 |
 | `exact_match` | Use exact sample ID matching | TRUE |
 | `prefer_hisens` | Prefer high-sensitivity samples when multiple matches | TRUE |
-| `p_threshold` | P-value threshold for significance | 0.05 |
-| `effect_threshold` | Effect size threshold | 1 |
-
 
 ## Example Usage
 ```r
@@ -140,7 +137,7 @@ generate_paired_cohort_analysis(
   out_dir = "results/paired_analysis/",
   oncokb_cnas_path = "path/to/oncokb_cna_data.txt",
   bin_size = 1e6, # Select bin size to split the genome.
-  tcn_diff_threshold = 1, # Threshold to plot labels in the average TCN difference plot.
+  tcn_diff_threshold = 1, # Threshold of effect size in plotted genes and bins.
   exact_match = FALSE,  # Enable partial matching with the ID column in cncf FACETS file.
   prefer_hisens = TRUE # Prefer hisens if multiple matches found.
 )

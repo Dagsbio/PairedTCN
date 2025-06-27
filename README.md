@@ -68,9 +68,6 @@ install.packages(c("tidyverse", "ggtext", "ggrepel", "tidyheatmaps"))
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 BiocManager::install(c("GenomicRanges", "plyranges"))
-
-# Development version of tidyheatmaps
-devtools::install_github("stemangiola/tidyheatmaps")
 ```
 ## Input Data Requirements
 
@@ -127,8 +124,7 @@ Flexible sample matching with:
 
 
 ## Example Usage
-```r
-
+```
 source("CompareTCN_functions.R")
 
 # Define your paired cohorts using names from the ID column of the cncf FACETS file or just sample 

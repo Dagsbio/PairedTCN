@@ -1,10 +1,10 @@
-# CompareTCN
+# PairedTCN
 
 Functions for analyzing and comparing Total Copy Number (TCN) profiles between paired and unpaired cancer sample cohorts.
 
 ## Overview
 
-CompareTCN provides tools for:
+PairedTCN provides tools for:
 - **Paired cohort analysis**: Compare matched samples (e.g., primary vs. metastatic tumors from the same patients)
 - **Unpaired cohort analysis**: Compare independent cohorts of different sizes
 - **Statistical testing**: Wilcoxon signed-rank test for paired data, Mann-Whitney U test for unpaired data
@@ -18,12 +18,6 @@ CompareTCN provides tools for:
 - Uses **Wilcoxon signed-rank test** for proper paired statistical testing
 - Generates pairwise comparison plots showing TCN differences
 - Creates summary statistics for each patient pair
-
-### Unpaired Cohort Analysis  (COMING SOON)
-- Compares two independent cohorts of potentially different sizes
-- Uses **Mann-Whitney U test** for independent group comparisons
-- Analyzes average TCN differences between cohorts
-- Suitable for comparing different cancer types or treatment groups
 
 ## Visualizations
 
@@ -122,7 +116,7 @@ Flexible sample matching with:
 
 ## Example Usage
 ```r
-source("CompareTCN_functions.R")
+source("PairedTCN_functions.R")
 
 # Define your paired cohorts using names from the ID column of the cncf FACETS file or just sample 
 cohort_1 <- c("P-001-Primary", "P-002-Primary", "P-003-Primary")
@@ -155,27 +149,9 @@ generate_paired_cohort_analysis(
 - `sample_id_mapping.tsv`: Sample ID resolution mapping
 - `pairwise_plots/`: Individual comparison plots and data
 
-### Unpaired Analysis (COMING SOON...)
-- `cohort_tcn_difference.png`: TCN differences between cohorts
-- `heatmap_cohort_comparison.png`: Cohort comparison heatmap
-- `combined_bin_data.csv`: Detailed bin-level analysis
-- `critical_regions.csv`: Regions exceeding threshold
-- `summary_statistics.csv`: Cohort summary statistics
-
 ## Statistical Methods
 
 ### Paired Analysis
 - **Wilcoxon signed-rank test**: Tests if the median of paired differences is significantly different from zero
 - **Paired t-test alternative**: Non-parametric test suitable for copy number data
 - **FDR correction**: Benjamini-Hochberg correction for multiple testing
-
-### Unpaired Analysis (COMING SOON...)
-- **Mann-Whitney U test**: Tests if two independent groups have different distributions
-- **Wilcoxon rank-sum test**: Non-parametric alternative to two-sample t-test
-- **FDR correction**: Benjamini-Hochberg correction for multiple testing
-
-## Authors
-
-David Gomez Sanchez (gomezsd@mskcc.org)
-Ramzi Homsi (homsir1@mskcc.org)
-

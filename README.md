@@ -6,7 +6,6 @@ Functions for analyzing and comparing Total Copy Number (TCN) profiles between p
 
 PairedTCN provides tools for:
 - **Paired cohort analysis**: Compare matched samples (e.g., primary vs. metastatic tumors from the same patients)
-- **Unpaired cohort analysis**: Compare independent cohorts of different sizes
 - **Statistical testing**: Wilcoxon signed-rank test for paired data, Mann-Whitney U test for unpaired data
 - **Visualization**: Heatmaps, volcano plots, Manhattan plots, and individual comparison plots
 - **Gene annotation**: Integration with Biomart and OncoKB databases

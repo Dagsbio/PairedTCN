@@ -1,4 +1,4 @@
-source("CompareTCN_functions.R")
+source("PairedTCN_functions.R")
 
 library(tidyverse)
 
